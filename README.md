@@ -1,49 +1,45 @@
-# AjaxinWP WordPress Theme
+# AjaxinWP (Ajax In WordPress) - A Barebone WordPress Theme Framework
 
 ## Overview
 
-AjaxinWP is a state-of-the-art WordPress theme crafted by Zeus Eternal. It aims to enhance the user experience through smooth, AJAX-driven navigation and content loading, eliminating the need for full page reloads. Built on top of WordPress's robust REST API, AjaxinWP delivers rapid content updates and supports dynamic interactions, ensuring an engaging and seamless browsing experience.
+AjaxinWP presents a minimalist yet robust barebone framework for WordPress theme development. Designed by Zeus Eternal (Agustealo), this framework serves as a foundation for developers seeking to create custom, dynamic WordPress sites with AJAX-driven navigation and content loading. Leveraging WordPress's core REST API, AjaxinWP facilitates rapid development of high-performance, SEO-friendly, and accessible websites.
 
-## Features
+## Key Features
 
-- **Seamless AJAX Navigation**: Employs AJAX for fluid page transitions and content updates without reloading the browser.
-- **Built on WordPress REST API**: Utilizes the core WordPress REST API for fetching posts, pages, and other content types efficiently.
-- **Optimized for Performance**: Designed with speed in mind to provide a fast loading experience.
-- **SEO and Accessibility Compliant**: Ensures that the theme adheres to SEO best practices and maintains web accessibility standards.
-- **Easy Customization**: Supports WordPress Customizer for straightforward theme customization.
+- **AJAX-driven Navigation**: Offers a seamless browsing experience with AJAX for dynamic content updates without page reloads.
+- **Core WordPress REST API Utilization**: Harnesses the built-in REST API for efficient content fetching and dynamic interactions.
+- **Performance Optimized**: A lightweight foundation that prioritizes speed and responsiveness.
+- **SEO and Accessibility Ready**: Meets web accessibility standards and SEO best practices out of the box.
+- **Developer-friendly Customization**: Provides a clean slate for extensive customization and feature development.
 
-## Getting Started
+## Installation
 
-### Installation
+1. Download the AjaxinWP framework zip file.
+2. Navigate to `Appearance > Themes > Add New > Upload Theme` in your WordPress admin.
+3. Upload the zip file and click `Install Now`.
+4. Activate the framework to begin development.
 
-1. Download the AjaxinWP theme zip file.
-2. In your WordPress dashboard, navigate to `Appearance > Themes > Add New > Upload Theme`.
-3. Select the downloaded zip file and click `Install Now`.
-4. Activate the theme once the installation completes.
+## Developing with AjaxinWP
 
-### Configuration
+AjaxinWP is built for developers looking to leverage a solid foundation for custom theme development. It includes essential functionalities and leaves room for extensive customization and feature addition.
 
-Customize AjaxinWP through the WordPress Customizer (`Appearance > Customize`), where you can adjust theme settings, manage widgets, and customize menus to suit your site's needs.
+### Customization and Extensibility
 
-## Development
-
-AjaxinWP is developed with a focus on clean, maintainable code and adherence to WordPress coding standards. It's designed for easy customization and extensibility.
-
-### Customizing AJAX Behavior
-
-While the theme leverages AJAX for core navigation and content loading, developers can extend or customize AJAX functionality as needed by modifying the `js/ajaxinwp.js` script.
+- Use the WordPress Customizer (`Appearance > Customize`) for basic theme customizations.
+- Extend AJAX functionality or add new features by editing `js/ajaxinwp.js` and incorporating additional JavaScript as needed.
+- Develop custom templates, partials, and components within the provided structure for a unique site design.
 
 ## Contributing
 
-Contributions to AjaxinWP are welcome! Whether it's bug fixes, feature suggestions, or code contributions, please feel free to suggest improvements or submit pull requests.
+We welcome contributions to AjaxinWP! Whether it's enhancing the framework, reporting bugs, or suggesting features, your input helps make AjaxinWP better for everyone.
 
 ## Support
 
-For questions, issues, or support related to the AjaxinWP theme, please reach out via the [theme support forum] or contact Zeus Eternal directly through the [official website contact page].
+For support and inquiries, please visit the [theme support forum] or contact Zeus Eternal through the [official website].
 
 ## License
 
-AjaxinWP is licensed under the GNU General Public License v2.0 or later. See the LICENSE file for more details.
+AjaxinWP is open-source software licensed under the GNU General Public License v2.0 or later.
 
-[theme support forum]: # "Insert support forum URL here"
-[official website contact page]: # "Insert contact page URL here"
+[theme support forum]: # "Your support forum URL"
+[official website]: # "Your official website URL"
