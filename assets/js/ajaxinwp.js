@@ -1,10 +1,12 @@
 class AjaxinWP {
-    constructor() {
+    constructor(homeURL) {
+        this.homeURL = homeURL;
         this.init();
     }
 
     init() {
         this.setupEventListeners();
+        this.preloadHomeContent();
     }
 
     setupEventListeners() {
@@ -40,8 +42,14 @@ class AjaxinWP {
               }
           }).catch(error => console.error('Error loading the content:', error));
     }
+
+    preloadHomeContent() {
+        this.loadContent(this.homeURL);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new AjaxinWP();
+    // Ensure you set the correct home URL here
+    const homeURL = window.location.origin;
+    const ajaxinWP = new AjaxinWP(homeURL);
 });
