@@ -1,134 +1,151 @@
-/*
-Theme Name: AjaxinWP
-Description: Styles for the AjaxinWP theme
-*/
+/* Reset and Base Styles */
+/* Apply a modern CSS reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+/* Set default styles for common HTML elements */
+html {
+    font-size: 16px;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
 
 a {
-    color: #0073aa;
+    color: #007bff;
     text-decoration: none;
 }
 
-a:hover,
-a:focus {
-    color: #005077;
+a:hover {
+    color: #0056b3;
 }
 
-#ajax-container {
-    transition: opacity 0.5s ease-in-out;
-}
-
-.loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.8);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loading-spinner {
-    border: 4px solid rgba(0,0,0,.1);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border-left-color: #0073aa;
-    animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
+/* Layout */
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Limit container width for better readability */
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.site-header {
-    // background-color: #333;
-    color: #fff;
-    padding: 20px;
+/* Navigation Styles */
+.navbar {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0.5rem 1rem;
 }
 
-.site-header .site-title,
-.site-header .site-description {
-    margin: 0;
-    padding: 0;
+.navbar-brand, .nav-link {
+    color: #0073aa !important;
 }
 
-.site-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-toggler {
+    background-color: #0073aa;
+}
+
+/* Submenu Styles */
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item {
+    color: #0073aa !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #e9ecef;
+    color: #0073aa !important;
+}
+
+/* Fixed Top */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Main Content and Sidebar */
+#content {
     margin-top: 20px;
 }
 
-.site-navigation .menu-toggle {
-    display: none;
+.content-area {
+    float: left;
+    width: 75%;
 }
 
-.site-navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+#sidebar {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
 }
 
-.site-navigation ul li {
+.site-main {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ced4da;
+}
+
+input[type="submit"] {
     display: inline-block;
-    margin-right: 20px;
-}
-
-.site-navigation ul li:last-child {
-    margin-right: 0;
-} 
-
-.site-navigation ul li a {
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-.site-content {
-    margin-top: 20px;
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-.entry-title,
-.entry-title a {
-    color: #333;
-    text-decoration: none;
-}
-
-.entry-content {
-    margin-top: 20px;
-}
-
-.entry-footer {
-    margin-top: 20px;
-}
-
-.site-footer {
-    // background-color: #333;
-    color: #fff;
-    padding: 20px;
+/* Utility Classes */
+.text-center {
     text-align: center;
 }
 
-.site-footer a {
-    color: #fff;
-    text-decoration: none;
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-area, #sidebar {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #sidebar {
+        margin-top: 20px;
+    }
 }
